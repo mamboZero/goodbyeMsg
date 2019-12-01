@@ -1,0 +1,8 @@
+<%= simple_form_for @message, defaults: { input_html: { class: 'default_class' } } do |f| %>
+  <%= f.input :title %>
+  <%= f.input :body %>
+  <%= f.input :main_image %>
+  <%= f.input :thumb_image %>
+  <%= f.input :bg_video %>
+  <%= f.button :submit %>
+<% end %>

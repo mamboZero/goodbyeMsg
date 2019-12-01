@@ -1,0 +1,33 @@
+<div id="show-page">
+	
+
+<div class="title ">
+	<h2><%= @message.title.upcase %></h2>
+</div>
+
+<div class="body-message">
+	<p><%= @message.body %> </p>
+</div>
+
+<div>
+	<%= image_tag @message.main_image %>
+</div>
+
+<div>
+	<%= image_tag @message.thumb_image %>
+</div>
+
+<div>
+
+	<iframe width="420" height="315"
+src="<%= @message.bg_video %>" allow:'autoplay'>  
+</iframe>
+
+</div>
+
+</div>
+
+<%= link_to "see all", root_path  %>
+
+<hr>
+<%= @message.inspect %>
