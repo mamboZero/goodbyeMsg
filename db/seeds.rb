@@ -5,6 +5,5 @@
 		thumb_image: "",
 		bg_video:"https://www.youtube.com/embed/QqOjerqXUsg?start=88"
 		)
-end
 
 
