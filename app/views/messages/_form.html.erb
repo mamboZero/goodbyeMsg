@@ -1,12 +1,8 @@
 <%= simple_form_for @message, defaults: { input_html: { class: 'default_class' } } do |f| %>
   <%= f.input :title %>
   <%= f.input :body %>
-  <%= f.input :main_image, placeholder: 'eg: http:https://via.placeholder.com/150
-
-C/O https://placeholder.com/'%>
-  <%= f.input :thumb_image, placeholder: 'eg: http:https://via.placeholder.com/150
-
-C/O https://placeholder.com/' %>
+  <%= f.input :main_image, placeholder: 'eg: https://via.placeholder.com/150'%>
+  <%= f.input :thumb_image, placeholder: 'eg: https://via.placeholder.com/150' %>
   <%= f.input :bg_video, placeholder: 'https://www.youtube.com/embed/ggFrlf1yuAQ?start=88' %>
   <%= f.button :submit %>
 <% end %>
