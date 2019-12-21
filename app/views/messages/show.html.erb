@@ -19,8 +19,8 @@
 
 <div>
 
-	<iframe width="420" height="315"
-src="<%= @message.bg_video %>" allow:'autoplay'>  
+	<iframe width="800" height="600" allowfullscreen autoplay
+src="<%= @message.bg_video %>" >  
 </iframe>
 
 </div>
@@ -31,3 +31,9 @@ src="<%= @message.bg_video %>" allow:'autoplay'>
 
 <hr>
 <%= @message.inspect %>
+
+<hr>
+
+<% if params[:id] == 'terima-kasih' %>
+		<h1>Hello world <%= params %></h1>
+<% end %>
